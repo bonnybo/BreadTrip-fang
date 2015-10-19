@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="specialCell" id="KGk-i7-Jjw" customClass="SpecialYoujiTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LTX-DA-Pc1">
+                        <rect key="frame" x="15" y="0.0" width="328" height="170"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjv-zg-VXc">
+                        <rect key="frame" x="15" y="39" width="328" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="328" id="FEe-Xc-S9s"/>
+                            <constraint firstAttribute="height" constant="37" id="PpA-H3-LOu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <color key="textColor" red="0.99310037360000003" green="0.99310037360000003" blue="0.99310037360000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qti-92-7Ib">
+                        <rect key="frame" x="15" y="90" width="328" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="T24-Zi-3X2"/>
+                            <constraint firstAttribute="width" constant="328" id="aK2-gg-eno"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.99310037360000003" green="0.99310037360000003" blue="0.99310037360000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wjv-zg-VXc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="7Yx-H4-qTe"/>
+                    <constraint firstItem="LTX-DA-Pc1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Lzu-l9-p2v"/>
+                    <constraint firstItem="LTX-DA-Pc1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="MZv-RY-fYG"/>
+                    <constraint firstItem="Wjv-zg-VXc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="UYU-8R-nmV"/>
+                    <constraint firstItem="Qti-92-7Ib" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ari-E8-6Ci"/>
+                    <constraint firstAttribute="trailing" secondItem="LTX-DA-Pc1" secondAttribute="trailing" constant="15" id="bpO-zc-tkb"/>
+                    <constraint firstAttribute="bottom" secondItem="LTX-DA-Pc1" secondAttribute="bottom" constant="19" id="f9D-0w-tr3"/>
+                    <constraint firstItem="Qti-92-7Ib" firstAttribute="top" secondItem="Wjv-zg-VXc" secondAttribute="bottom" constant="14" id="nkc-46-ofp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_subTitleLabel" destination="Qti-92-7Ib" id="Cqy-ke-1Os"/>
+                <outlet property="_titleLabel" destination="Wjv-zg-VXc" id="ReL-3V-sBm"/>
+                <outlet property="imgView" destination="LTX-DA-Pc1" id="GfL-jP-vAD"/>
+            </connections>
+            <point key="canvasLocation" x="285" y="206"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
