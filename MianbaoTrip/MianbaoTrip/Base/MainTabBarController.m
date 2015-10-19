@@ -169,6 +169,7 @@
 }
 - (void)addAnimation
 {
+//    组动画
     //旋转
      CABasicAnimation *firstViewAnimation = [CABasicAnimation animation];
      firstViewAnimation.fromValue = @0;
@@ -186,6 +187,7 @@
     group.animations = @[firstViewAnimation, secondAnimation];
     [firstView.layer addAnimation:group forKey:@"group"];
     [secondView.layer addAnimation:group forKey:@"group"];
+    
 }
 - (void)backAnimation
 {
@@ -210,7 +212,7 @@
 - (void)hideAnimation
 {
     [self backAnimation];
-      [UIView animateWithDuration:0.5
+    [UIView animateWithDuration:0.5
                      animations:^{
                        addView.transform = CGAffineTransformIdentity;
                          firstView.frame = CGRectMake(kScreenWidth/2, kScreenHeight, 0, 0);

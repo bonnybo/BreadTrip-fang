@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-//    注册第三方平台
+//    注册第三方平台（微博）
     [ShareSDK registerApp:@"LDFApp"
           activePlatforms:@[@(SSDKPlatformTypeSinaWeibo)]
                  onImport:nil
@@ -31,12 +31,13 @@
                                               redirectUri:kAppRedirectURI
                                                  authType:SSDKAuthTypeBoth];
                       break;
+//                  case SSDKPlatformTypeQQ:
+//                      [appInfo SSDKSetupQQByAppId:<#(NSString *)#> appKey:<#(NSString *)#> authType:<#(NSString *)#>];
                       
                   default:
                       break;
               }
           }];
-    
     
     
     

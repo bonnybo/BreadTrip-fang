@@ -18,9 +18,14 @@
 
 
 //新浪微博SDK
-#define kAppKey             @"1609488266"
-#define kAppSecret          @"018db067d2971e864f5061bff4402c8f"
+//#define kAppKey             @"1609488266"
+//#define kAppSecret          @"018db067d2971e864f5061bff4402c8f"
 #define kAppRedirectURI     @"http://www.iphonetrain.com"
+
+
+#define kAppKey             @"1950685591"
+#define kAppSecret          @"e2a5803c4b0e6fd398a50e56b0bcb5a1"
+
 
 
 
@@ -57,7 +62,11 @@
 //附近详情
 #define kPlace_detail @"destination/place/5/"
 
-
+//定义nslog
+#ifdef DEBUG
+#else
+#define NSLog(...) ((void)0);
+#endif
 
 
 
